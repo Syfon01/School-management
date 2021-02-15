@@ -65,9 +65,9 @@
             </div>
           </div><!-- aside-loggedin -->
           <ul class="nav nav-aside">
-            <li class="nav-item active"><a href="dashboard.html" class="nav-link"><i data-feather="dashboard"></i> <span>Dashboard</span></a></li>
+            <li class="nav-item "><a href="dashboard.html" class="nav-link"><i data-feather="dashboard"></i> <span>Dashboard</span></a></li>
             
-            <li class="nav-item"><a href="attendance.html" class="nav-link"><i data-feather="hash"></i> <span>Attendance</span></a></li>
+            <li class="nav-item active"><a href="attendance.html" class="nav-link"><i data-feather="hash"></i> <span>Attendance</span></a></li>
             <li class="nav-item"><a href="course.html" class="nav-link"><i data-feather="help-circle"></i> <span>Courses</span></a></li>
             <li class="nav-item"><a href="code.html" class="nav-link"><i data-feather="book-open"></i> <span>QR Code</span></a></li>
            
@@ -96,63 +96,98 @@
   
         <div class="content-body">
           <div class="container pd-x-0">
-            <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
-              <div>
-                <!-- <p class="tx-14 mg-b-0 tx-spacing--1">Dashboard</p> -->
-                <h3>Welcome Victor</h3>
-              </div>
-              
-            </div>
-
-            <div class="row row-xs">
-              <div class="col-6 mg-b-10 mg-sm-t-0">
-                <div class="card card-body pd-y-20">
-                  <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-0">Average Attendance of Students</h6>
-                  <div class="d-flex d-lg-block d-xl-flex align-items-end">
-                    <h1 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">24</h1>
-                    <a href="./attendance.html" class="link-03 tx-11">View List<i
-                        class="tx-success icon ion-md-arrow-forward mg-l-5"></i></a>
-                  </div>
-                  
-                </div>
-              </div><!-- col -->
-              <div class="col-6 mg-b-10 mg-sm-t-0">
-                <div class="card card-body pd-y-20">
-                  <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-0">Total Number of Courses</h6>
-                  <div class="d-flex d-lg-block d-xl-flex align-items-end">
-                    <h1 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">24</h1>
-                    <a href="./course.html" class="link-03 tx-11">View List<i
-                        class="tx-success icon ion-md-arrow-forward mg-l-5"></i></a>
-                  </div>
-                  
-                </div>
-              </div><!-- col -->
-              <div class="col-6 mg-b-10 mg-sm-t-0">
-                <div class="card card-body pd-y-20">
-                  <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-0">Total Number of Students</h6>
-                  <div class="d-flex d-lg-block d-xl-flex align-items-end">
-                    <h1 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">64</h1>
-                    <a href="./course.html" class="link-03 tx-11">View List<i
-                        class="tx-success icon ion-md-arrow-forward mg-l-5"></i></a>
-                  </div>
-                  
-                </div>
-              </div><!-- col -->
-              <div class="col-6 mg-b-10 mg-sm-t-0">
-                <div class="card card-body pd-y-20">
-                  <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-0">QR code Generate</h6>
-                  <div class="d-flex d-lg-block d-xl-flex align-items-end">
-                    <h1 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">14</h1>
-                    <a href="./code.html" class="link-03 tx-11">View List<i
-                        class="tx-success icon ion-md-arrow-forward mg-l-5"></i></a>
-                  </div>
-                  
-                </div>
-              </div><!-- col -->
-              
-            </div>
-  
             
+            <div class="row row-xs">
+  
+              
+              <div class="container-fluid mg-t-10">
+                <div class="card mg-b-10">
+                  <div class="card-header pd-t-10 d-sm-flex align-items-start justify-content-between bd-b-0 pd-b-0">
+                    <div>
+                      <h5 class="mg-b-10 text-uppercase">Attendance</h5>
+                    </div>
+                    <div class="d-flex mg-t-20 mg-sm-t-0">
+                    
+                    </div>
+                  </div><!-- card-header -->
+                  <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table" id="tableData">
+                          <thead>
+                            <tr>
+                              <th scope="col">Reg No</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Course</th>
+                              <th scope="col">Present</th>
+                              <th scope="col">Absent</th>
+                              <th scope="col">Mark</th>
+                              <th scope="col">Comment</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">
+                                AH0834
+                                </th>
+                              <td>Henry Chukwuemeka</td>
+                              <td>Computer Science</td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td></td>
+                              <td>Very Good</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                  AH0478
+                                  </th>
+                                <td>Oluchi Chukwuemeka</td>
+                                <td>Computer Science</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td></td>
+                                <td>Good</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">
+                                  AH0348
+                                  </th>
+                                <td>Henry Smith</td>
+                                <td>Computer Science</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td></td>
+                                <td>Very Good</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">
+                                  AH0789
+                                  </th>
+                                <td>David Seyi</td>
+                                <td>Computer Science</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td></td>
+                                <td>Good</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">
+                                  AH0478
+                                  </th>
+                                <td>Basil Bassey</td>
+                                <td>Computer Science</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td></td>
+                                <td>Very Good</td>
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                  </div>
+                </div> 
+               </div>
+  
+            </div>
           </div><!-- container -->
         </div>
       </div>
